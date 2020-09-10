@@ -1,15 +1,16 @@
 # YouTube-Recommender-using-Emotion-Context-and-Facial-Sentiment
 
-This is a simple recommender that uses YouTube-Api to recommend videos.
+This is a simple recommender that uses YouTube-Api and Facial Emotion Recognition to recommend videos.
+
 The app first takes in Emotion and keeps it as context. If recommended video gets negative sentiment feedback, 
 new category of video is recommended, keeping the Emotion it encountered first as context for the next recommendation.
 
-*Only the highest emotion/sentiment is taken, but the results are stored for all emotion. 
-*These stored information can be used as features for an intelligent Recommender System.
-*These can also be recorded for the whole-day/work-hours to give intelligent mood-based Recommendation
+Only the highest emotion/sentiment is taken, but the results are stored for all emotion. 
+These stored information can be used as features for an intelligent Recommender System.
+These can also be recorded for the whole-day/work-hours to give intelligent mood-based Recommendation.
 Although this Recommender is simple mapping, it can be made intelligent by implementing personalised ranking to the categories
 with successive usage. Collaborative Filtering would make it more efficient. 
-*But this will require crowdsourcing and collecting facial data for every video watched
+But this will require crowdsourcing and collecting facial data for every video watched.
 
 YOUTUBE VIDEO_CATEGORY_ID LIST CAN BE FOUND ON THE GITHUB DIRECTORY.
     
