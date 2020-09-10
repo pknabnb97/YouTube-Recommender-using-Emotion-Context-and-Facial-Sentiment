@@ -5,14 +5,6 @@ This is a simple recommender that uses YouTube-Api to recommend videos.
 The app first takes in Emotion and keeps it as context. If recommended video gets negative sentiment feedback, 
 new category of video is recommended, keeping the Emotion it encountered first as context for the next recommendation.
 
-**Only the highest emotion/sentiment is taken, but the results are stored for all emotion. 
-***These stored information can be used as features for an intelligent Recommender System.
-***These can also be recorded for the whole-day/work-hours to give intelligent mood-based Recommendation
-
-Although this Recommender is simple mapping, it can be made intelligent by implementing personalised ranking to the categories
-with successive usage. Collaborative Filtering would make it more efficient. 
-**But this will require crowdsourcing and collecting facial data for every video watched
-
 YOUTUBE VIDEO_CATEGORY_ID LIST CAN BE FOUND ON THE PROJECT DIRECTORY.
     
 #=========CONTEXT======================MAPPED-TO========================#
@@ -31,10 +23,6 @@ FOR SENTIMENT FEEDBACK: *If user is SAD/HAPPY/SURPRISE mostly while watching the
                         *ANGRY and DISGUST generally gives misclassification error in most FER tests,
                          as they look almost the same. In this recommendation, we can treat both anger and disgust
                          as NEGATIVE SENTIMENT as Anger is bad for health and very few people like Disgusting videos.
-                         
-                        
-
-The Accuracy of trained FER model was 75% on test_dataset. Using MTCNN or DLIB will increase accuracy.
 
 #===================KEEP WEB-BROWSER RESTORED DOWN TO OBSERVE GUI AND OPENCV WINDOW===================================#
 
