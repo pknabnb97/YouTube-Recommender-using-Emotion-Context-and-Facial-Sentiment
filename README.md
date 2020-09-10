@@ -1,8 +1,9 @@
 # YouTube-Recommender-using-Emotion-Context-and-Facial-Sentiment
 
-This is a simple recommender that uses YouTube-Api and Facial Emotion Recognition to recommend videos.
+This is a simple recommender app that uses YouTube-Api and Facial Emotion Recognition (OpenCV, CNN) to recommend videos.
+Tkinter is used as GUI for this app.
 
-The app first takes in Emotion and keeps it as context. If recommended video gets negative sentiment feedback, 
+The app first takes in Facial Emotion and keeps it as context. If recommended video gets negative sentiment feedback, 
 new category of video is recommended, keeping the Emotion it encountered first as context for the next recommendation.
 
 Only the highest emotion/sentiment is taken, but the results are stored for all emotion. 
