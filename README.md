@@ -15,18 +15,20 @@ YOUTUBE VIDEO_CATEGORY_ID LIST CAN BE FOUND ON THE GITHUB DIRECTORY.
     
 #=========CONTEXT======================MAPPED-TO========================#
 #=========EMOTION==================VIDEO_CATEGORY_ID====================#
-           SAD                      23, 15, 10
-           HAPPY                    24, 40, 28
-           ANGRY/STRESSED           24, 39, 15
-           SURPRISE/FEAR            1, 10, 39
+#==========SAD======================23, 15, 10==========================#
+#==========HAPPY====================24, 40, 28==========================#
+#==========ANGRY/STRESSED===========24, 39, 15==========================#
+#==========SURPRISE/FEAR============1, 10, 39===========================#
+
 SURPRISE and NEUTRAL are not good features for this first part of the recommender,
 but SURPRISE is useful in SENTIMENT FEEDBACK.
-FOR SENTIMENT FEEDBACK: *If user is SAD/HAPPY/SURPRISE mostly while watching the video, it means user is engaged with
-                         the recommended media. So a POSITIVE SENTIMENT is taken.
+FOR SENTIMENT FEEDBACK: 
+If user is SAD/HAPPY/SURPRISE mostly while watching the video, it means user is engaged with
+the recommended media. So a POSITIVE SENTIMENT is taken.
                          
-                        *ANGRY and DISGUST generally gives misclassification error in most FER tests,
-                         as they look almost the same. In this recommendation, we can treat both anger and disgust
-                         as NEGATIVE SENTIMENT as Anger is bad for health and very few people like Disgusting videos.
+ANGRY and DISGUST generally gives misclassification error in most FER tests,
+as they look almost the same. In this recommendation, we can treat both anger and disgust
+as NEGATIVE SENTIMENT as Anger is bad for health and very few people like Disgusting videos.
                          
 To Train the model yourself:
 1. Download FER+ dataset through GitHub.
